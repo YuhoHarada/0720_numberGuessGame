@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <section>
+        <p>in how many rounds you think you can guess the number?</p>
+        <form action="" id="roundsChoice">
+            <input type="radio" name="round" value="4" id="r4" onclick="roundsView()" checked>
+            <label for="r4">4</label>
+            <input type="radio" name="round" value="5" id="r5" onclick="roundsView()">
+            <label for="r5">5</label>
+            <input type="radio" name="round" value="6" id="r6" onclick="roundsView()">
+            <label for="r6">6</label>
+            <input type="radio" name="round" value="custom" id="custom" onclick="roundsView()">
+            <label for="custom">custom</label>
+            <input type="number" name="" id="roundCustom">
+        </form>
+        <div id="rounds"></div>
+    </section>
+    <section>
+        <div>
+            <input type="number" name="" id="inputNumber">
+        </div>
+        <div>
+            <input type="button" value="guess" onclick="guess()">
+        </div>
+    </section>
+    <p id="result"></p>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
