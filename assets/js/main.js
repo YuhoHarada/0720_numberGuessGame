@@ -38,7 +38,7 @@ function guess() {
     }
     rounds.innerHTML = `${count} / ${maxRound}`
     if (inputNumber.value == randamNum) {
-        result.innerHTML += `${count}- Yes!! You got me in ${maxRound} guesses. I'm ${randamNum}! You win!!<br><a onclick="window.location.reload();"><u>Play again</u></a><br>`
+        result.innerHTML += `${count}- <span class="gameClear">Yes!! You got me in ${maxRound} guesses. I'm ${randamNum}! You win!!</span><br><a onclick="window.location.reload();"><u>Play again</u></a><br>`
         end = true
         return
     } else if (inputNumber.value < randamNum) {
@@ -47,7 +47,7 @@ function guess() {
         result.innerHTML += `${count}- You need to guess lower than ${inputNumber.value}, try again..<br>`
     }
     if (count == maxRound) {
-        result.innerHTML += `game over! I'm ${randamNum}!!<br><a onclick="window.location.reload();"><u>Play again</u></a>`
+        result.innerHTML += `<span class="gameOver">game over! I'm ${randamNum}!!</span><br><a onclick="window.location.reload();"><u>Play again</u></a>`
     }
     count++
 }

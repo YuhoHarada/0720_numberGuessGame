@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body{
     background: black;
     color: #fff;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
 
@@ -12,7 +14,7 @@ section *{
 }
 
 section{
-    width: 300px;
+    width: 500px;
     margin: 0 auto;
     border: #fff 2px solid;
     border-radius: 20px;
@@ -55,5 +57,13 @@ input[type=button]{
 }
 
 p{
-    line-height: 1.5em;
+    line-height: 1.8em;
+}
+
+.gameClear{
+    color: green;
+}
+
+.gameOver{
+    color: red;
 }
