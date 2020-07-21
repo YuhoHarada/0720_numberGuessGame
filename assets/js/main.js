@@ -41,6 +41,7 @@ function guess() {
     if (inputNumber.value == randamNum) {
         result.innerHTML += `${count}- <span class="gameClear">Yes!! You got me in ${count} guesses. I'm ${randamNum}! You win!!</span><br><a onclick="window.location.reload();"><u>Play again</u></a><br>`
         end = true
+        result.scrollTop = result.scrollHeight
         return
     } else if (inputNumber.value < randamNum) {
         result.innerHTML += `${count}- You need to guess higher than ${inputNumber.value}, try again..<br>`
