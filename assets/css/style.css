@@ -37,9 +37,13 @@ section p{
 #roundCustom{
     grid-column: 4 span;
     box-sizing: border-box;
-    width: 150px;
+    width: 230px;
     margin-left: auto;
     display: none;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 0;
+
 }
 
 #inputNumber{
