@@ -32,6 +32,7 @@ function guess() {
         } else {
             maxRound = roundsChoice.round.value
         }
+        result.innerHTML = ""
     }
     if (count > maxRound) {
         return
@@ -49,5 +50,6 @@ function guess() {
     if (count == maxRound) {
         result.innerHTML += `<span class="gameOver">game over! I'm ${randamNum}!!</span><br><a onclick="window.location.reload();"><u>Play again</u></a>`
     }
+    result.scrollTop = result.scrollHeight
     count++
 }

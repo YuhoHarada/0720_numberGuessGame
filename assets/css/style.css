@@ -14,7 +14,7 @@ section *{
 }
 
 section{
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
     border: #fff 2px solid;
     border-radius: 20px;
@@ -22,7 +22,7 @@ section{
     margin-bottom: 30px;
 }
 
-section p{
+section:first-of-type p{
     margin-bottom: 40px;
 }
 
@@ -67,6 +67,12 @@ input[type=button]{
 
 p{
     line-height: 1.8em;
+}
+
+#result{
+    height: 150px;
+    text-align: left;
+    overflow-y: scroll;
 }
 
 .gameClear{
